@@ -10,7 +10,7 @@
     <div class="form-container">
         <img src="assets/logo.jpeg" alt="Logo de la marca">
         
-        <form id="registroForm">
+        <form id="registroForm" onsubmit="event.preventDefault(); sendData();"  >
             <div class="inline-fields">
                 <select id="id-type" name="id-type" required onchange="updateSelect()">
                     <option value="" disabled selected>Tipo</option>
@@ -186,7 +186,7 @@
           
         </form>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./data.js"></script>
+    <script type="module" src="firebase.js"></script>
 </body>
 </html>
