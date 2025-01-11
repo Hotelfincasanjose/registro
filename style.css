@@ -1,0 +1,78 @@
+
+  
+        body {
+            display: flex;                   /* Utiliza Flexbox */
+            height: 100vh;                   /* Altura de la ventana completa */
+            justify-content: center;         /* Centra el contenido horizontalmente */
+            align-items: center;             /* Centra el contenido verticalmente */
+            background: url('assets/fondo.jpeg');  /* Ruta de la imagen de fondo */
+            background-size: cover;          /* La imagen cubre todo el fondo sin repetirse */
+            background-position: center;     /* Centra la imagen dentro del fondo */
+            margin: 0;                        /* Elimina los márgenes del body */
+            padding: 0;  
+        }
+        .form-container {
+            width: 100%;
+            max-width: 325px;
+            background: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 60px #000;
+            text-align: center;
+            margin-top: 200px;
+            
+        }
+        .form-container img {
+            width: 100px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        
+        .form-container input, .form-container select, .form-container label {
+            width: 85%;
+            padding: 10px;
+            margin: 10px 10px;
+            border: 1px solid #080808;
+            border-radius: 5px;
+            font-size: 15px;
+            color: #666666;
+           
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #173753;
+            color: #fff;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #1d70a2;
+        }
+
+        /* Contenedor para alinear campos en una fila */
+        .inline-fields {
+            display: flex;
+            justify-content: space-between;
+             /* Espacio entre los elementos */
+        }
+
+        .inline-fields select {
+            width: 30%; /* Reduce aún más el select */
+            max-height: 100px;
+            overflow-y: auto;
+            font-size: 12px;
+        }
+
+        .inline-fields input {
+            width: 60%; /* Ajusta el input a un tamaño proporcional */
+        }
+        label {
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 5px 10px; /* Puedes añadir un poco de relleno para que el fondo se vea más espacioso */
+            border-radius: 4px; /* Redondea las esquinas si lo deseas */
+            display: block; /* Hace que el label ocupe toda la línea */
+            font-size: 15px;
+        }
