@@ -8,11 +8,14 @@
     messagingSenderId: "427448141649",
     appId: "1:427448141649:web:97eecaefb08a941e2cf570"
   };
+// initialize firebase
+firebase.initializeApp(firebaseConfig);
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = firebase.firestore(app); // Inicializa Firestore
+// reference your database
+var contactFormDB = firebase.database().ref("contactForm");
 
+document.getElementById("contactForm").addEventListener("submit", submitForm);
+ 
   // Función que se ejecutará al enviar el formulario
   function sendToFirestore(event) {
     event.preventDefault(); // Evita que el formulario se recargue

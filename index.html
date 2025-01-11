@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js"></script>
 </head>
 <body>
     <div class="form-container">
@@ -28,29 +26,18 @@
                 <input type="text" id="nombres" placeholder="Nombres" required>
                 <input type="text" id="apellidos" placeholder="Apellidos" required>
             </div>
-
-            
-            <div class="inline-fields">
-                
-            </div> 
+        
             <input type="email" id="correo" placeholder="Correo electrónico" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          
             <input type="text" id="ciudad" placeholder="Ciudad de residencia" required>
             <input type="text" id="habitacion" placeholder="Habitación " required>
-        
-
-            
-            <label for="fecha-ingreso">Fecha de ingreso:</label>
-            <input type="date" id="fechaIngreso" required>
-                
-            <label for="fecha-ingreso">Fecha de salida:</label>
-            <input type="date" id="fechaSalida" required>
+            <input type="text" id="fecha-ingreso" name="fecha-ingreso" placeholder="Fecha de ingreso:" onfocus="this.type='date'" required >
+            <input type="text" id="fechasalida" name="fecha-salida" placeholder="Fecha de salida:" onfocus="this.type='date'" required >
             
             
             
             <div class="inline-fields">
                 <select id="pais"   required onchange="updateSelect2()">
-                    <option value="" disabled selected>Indicativo</option>
+                    <option value="" disabled selected>+</option>
                     <option value="+93">Afganistán (+93)</option>
                     <option value="+355">Albania (+355)</option>
                     <option value="+213">Argelia (+213)</option>
@@ -199,6 +186,7 @@
           
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./data.js"></script>
 </body>
 </html>

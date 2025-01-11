@@ -29,7 +29,7 @@
         }
         
         .form-container input, .form-container select, .form-container label {
-            width: 85%;
+            width: 87%;
             padding: 10px;
             margin: 10px 10px;
             border: 1px solid #080808;
@@ -69,10 +69,4 @@
         .inline-fields input {
             width: 60%; /* Ajusta el input a un tamaño proporcional */
         }
-        label {
-            background-color: #ffffff; /* Fondo blanco */
-            padding: 5px 10px; /* Puedes añadir un poco de relleno para que el fondo se vea más espacioso */
-            border-radius: 4px; /* Redondea las esquinas si lo deseas */
-            display: block; /* Hace que el label ocupe toda la línea */
-            font-size: 15px;
-        }
+        
