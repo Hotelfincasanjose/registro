@@ -1,5 +1,8 @@
 
-  
+        *{
+             margin: 0;                      
+             padding: 0;  
+            }
         body {
             display: flex;                   /* Utiliza Flexbox */
             height: 100vh;                   /* Altura de la ventana completa */
@@ -19,12 +22,12 @@
             border-radius: 10px;
             box-shadow: 0 0 60px #000;
             text-align: center;
-            margin-top: 100px;
+            margin-top: 50px;
             
         }
         .form-container img {
             width: 100px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             border-radius: 50%;
         }
         
