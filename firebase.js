@@ -35,7 +35,8 @@ async function sendData() {
   const tel = document.getElementById("telefono").value;
   try {
     // Crear la referencia a la base de datos
-    const userRef = ref(database, "users");
+    //const userRef = ref(database, "users");
+    const userRef = ref(database, 'users/' + id);
 
     // Crear una nueva referencia para agregar un nuevo usuario
     const newUserRef = push(userRef);
